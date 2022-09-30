@@ -23,11 +23,11 @@ function App() {
       <NavBar />   
       <Routes>   
           <Route path="/" element={<Home /> } />
-          <Route path="Productos" element={<Product /> } />
+          <Route path="Product" element={<Product /> } />
           <Route path="SobreNosotros" element={<div>Sobre Nosotros</div> } />
           <Route path="Contacto" element={<Contacto/>} />     
           <Route path="detail/:id" element={<ItemDetailContainer /> } />
-          <Route path='category/:categoryName' element={<Product /> } />
+          <Route path='categoryId/:categoryName' element={<Product /> } />
           <Route path='CartView' element={< CartView />} />
       </Routes>
       <Footer />

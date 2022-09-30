@@ -4,6 +4,7 @@ import { useState, useContext } from 'react';
 import { Link } from "react-router-dom";
 import { CartContext } from '../Context/CartContex';
 
+const rutaInicial = '../img/';
 export const ItemDetail = ({ product }) => {
     const [count , setCount] = useState(1);
     const click = () => {
@@ -15,7 +16,7 @@ export const ItemDetail = ({ product }) => {
 return (
   <>
   <div key={product.id} className="producto card h-100 text-center p-4">
-    <img src={product.img} className="card-img-top" alt={product.title} height='350px' />
+    <img src={rutaInicial + product.img} className="card-img-top" alt={product.title} height='350px' />
     <div className="card-body">
       <h5 className="card-title mb-0">{product.title} </h5>
       <h5 className="card-title mb-0">{product.category} </h5>

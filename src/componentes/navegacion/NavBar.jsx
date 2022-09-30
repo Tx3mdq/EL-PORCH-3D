@@ -1,8 +1,11 @@
 import { navbar, Nav, Container } from "react-bootstrap"
 import { Outlet, Link, NavLink } from "react-router-dom"
 import CardWidget from "../CardWidget"
+import { useContext } from 'react';
+import { CartContext } from '../../Context/CartContex';
 
 const NavBar = () => {
+  const { cart } = useContext(CartContext)
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3
@@ -27,7 +30,7 @@ const NavBar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active" to={'/Productos'}>
+                <NavLink className="nav-link active" to={'/Product'}>
                 Productos
                 </NavLink>
               </li>
@@ -48,7 +51,7 @@ const NavBar = () => {
                 <a href="" className="btn btn-outline-dark ms-2">
                 <i className="fa fa-user-plus me-1"></i>Resgistrarse</a>
                 <NavLink className="btn btn-outline-dark ms-2" to={'/CartView'}>
-                <i className="fa fa-shopping-cart me-1"></i>Comprar (0)
+                <i className="fa fa-shopping-cart me-1"></i>Comprar ({cart.length})
                 </NavLink>
           </div>
         </div>

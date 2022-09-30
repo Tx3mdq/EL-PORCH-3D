@@ -7,7 +7,7 @@ export const CartView = () => {
 
     const { cart, removeFromCart, clearAll, sumTotal } = useContext(CartContext)
 
-
+    const rutaInicial = '../img/';
     return (
 
         <>
@@ -15,7 +15,7 @@ export const CartView = () => {
                 {cart.length === 0 ?
                     (<div className="cartIsEmpty">
                         <h2 className="cartIsEmpty">Your cart is empty!</h2>
-                        <Link to="/Productos"><button className='btn btn-outline-dark m-2'>Back to shopping</button></Link>
+                        <Link to="/Product"><button className='btn btn-outline-dark m-2'>Back to shopping</button></Link>
                     </div>
                     )
                     :
@@ -24,7 +24,7 @@ export const CartView = () => {
                             <h3 className="order">Sus Productos Seleccionados:</h3>
                             {cart.map((i) =>
                                 <div key={i.id} className="col-md-4 p-4">
-                                    <img src={i.img} className="card-img-top" alt={i.title} height="350px" width="180px" />
+                                    <img src={rutaInicial + i.img} className="card-img-top" alt={i.title} height="350px" width="180px" />
                                     <p className='lead fw-bold'>{i.title} <span> ({i.cantidad})</span></p>
                                     <h5>$ {i.price}</h5>
                                     <button className='btn btn-outline-dark m-2' onClick={() => removeFromCart(i.id)}> Eliminar
