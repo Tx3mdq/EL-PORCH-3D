@@ -8,16 +8,30 @@ import Product from './paginas/Product';
 import Footer from './componentes/navegacion/Footer';
 import {CartProvider} from './Context/CartContex';
 import CartView from './componentes/CartView/CartView';
-
+import {useState, useEffect} from 'react';
+import ClockLoader from "react-spinners/ClockLoader";
 
 
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect (() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000)
+  }, [])
   
 
   return (
     <>
-    <div>
+    
+  {
+    
+      loading ? ( <div className='clock'><ClockLoader color="black" size={100} speedMultiplier={1} loading={loading}/></div>)
+      :
+    (
     <BrowserRouter>
     <CartProvider>
       <NavBar />   
@@ -33,7 +47,8 @@ function App() {
       <Footer />
       </CartProvider>
       </BrowserRouter>
-    </div>
+    )
+  }
   </>
   );
 }

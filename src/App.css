@@ -85,6 +85,7 @@
     box-sizing: border-box ;
     box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.1);
     order: 5px black;
+    margin-top: 100px;
 }
 body{
     position: relative;
@@ -134,4 +135,55 @@ body{
 .total{
     text-align: end;
     margin-right: 35px;
+}
+.colum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pre-order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 0.1);
+    border: 6px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    width: 450px;
+    margin-bottom: 20px;
+}
+.pre-order:hover{
+    border: 2px solid black;
+    
+}
+.lead p{
+    font-size: 25px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    text-align: center;
+    padding: 0px 300px;
+    
+}
+.iframe p{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+.video{
+    text-align: center;
+    
+}
+.UC{
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+.clock{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
 }

@@ -27,37 +27,6 @@ const ItemDetailContainer = () => {
 
 
 
-// // const {id} = useParams();
-// // const [productDetail, setProductDetail] = useState([]);
-// //     useEffect (() => {
-// //         getItem.then((response) => {
-// //             const dataFiltrada = response.filter((product) => product.id === id);
-// //             setProductDetail(...dataFiltrada);
-// //         })
-// //     },)
-// // const getItem = new Promise((resolve) => {
-// //         setTimeout(() => {
-// //             resolve(data);
-// //         },);
-// //     });
-// const [productDetail, setProductDetail] = useState([])
-//     let { id } = useParams()
-
-//     useEffect(() => {
-//         const db = getfirestore()
-//         const itemCollection = db.collection("product")
-//         const item = itemCollection.doc(id)
-
-//         item.get()
-//             .then((doc) => {
-//                 setProductDetail({ id: doc.id, ...doc.data() })
-//             }).catch(
-//                 (error) => console.error("Firestore error", error)
-//             )
-//     }, [id])
-
-
-
 
 return (
     <>

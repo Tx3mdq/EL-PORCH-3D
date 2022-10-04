@@ -9,7 +9,7 @@ const ItemList = ({product}) => {
     
   return (
   <>
-        <h1 className='display-6 m-4 fw-bolder text-center'>Ultimas Creaciones</h1>
+        <h1 className='UC display-6 fw-bolder text-center'>Ultimas Creaciones</h1>
   <div className='item'>
         {product.map((item)=>(       
         <Link key={item.id} to={'/detail/'+item.id} >
