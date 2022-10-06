@@ -4,6 +4,7 @@ import ListaProductos from '../componentes/ListaProductos';
 import { NavLink } from "react-router-dom";
 import {getFirestore, getDocs, collection, query, where} from "firebase/firestore"
 import '../App.css'
+import ClockLoader from "react-spinners/ClockLoader";
 
 
 const Product = () => {
@@ -39,9 +40,20 @@ const Product = () => {
             }
             
         }
-  return (
+    const [loading, setLoading] = useState(false);
+        useEffect (() => {
+        setLoading(true)
+        setTimeout(() => {
+        setLoading(false)
+        }, 2000)
+        }, [])
+return (
     <>
-    <h1 className='display-6 m-4 fw-bolder text-center'>Nuestro Catalogo</h1>
+    {
+    loading ? ( <div className='clock'><ClockLoader color="black" size={100} speedMultiplier={1} loading={loading}/></div>) 
+    :
+(  <div>
+        <h1 className='display-6 m-4 fw-bolder text-center'>Nuestro Catalogo</h1>
         <hr />
         <div className='buttons d-flex justify-content-center mb-5 p-4'>
         <NavLink to={"/Product"}><button className='btn btn-outline-dark me-2'>Todos los diseños</button></NavLink>
@@ -51,7 +63,9 @@ const Product = () => {
         <NavLink to={"/categoryId/personajes"}><button className='btn btn-outline-dark me-2'>Personajes</button></NavLink>
         </div>
     <ListaProductos product={productList}/>
+    </div>
+    )}
     </>
-)
-}
+);
+};
  export default Product

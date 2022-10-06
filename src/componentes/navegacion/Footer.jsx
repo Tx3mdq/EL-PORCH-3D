@@ -10,14 +10,14 @@ const Footer = () => {
           <div className="col">
             <h3>EL PORCH 3D</h3>
             <ul className="list-unstyled">
-              <li>223-4999000</li>
+              <li>223-6208899</li>
               <li>Mar del Plata</li>
               <li>Av de Los trabajadores</li>
             </ul>
           </div>
           {/* Column2 */}
           <div className="col">
-            <h4>| Formas de Pago</h4>
+            <h4>| Formas de Pagos</h4>
             <ul className="list-unstyled">
               <li>Efectivo</li>
               <li>Tarjeta de Regalo</li>
@@ -50,7 +50,8 @@ const Footer = () => {
         <hr />
         <div className="row">
           <p className="col-sm">
-             Gaston Almeyda® | All rights reserved |
+             Gaston Almeyda®  <a href="https://www.linkedin.com/in/gaston-almeyda-20372b125" target="_BLANK">
+              <i className="fa fa-linkedin"></i></a>  | All rights reserved |
             Terms Of Service | Privacy
           </p>
         </div>
