@@ -1,9 +1,10 @@
 import React from "react";
+import '../App.css'
 
 const Contacto = () => {
   return (
-    <>
-      <form className="row g-3 m-4">
+    <div className="formulario">
+      <form className="row g-3 m-4 ">
         <div className="col-md-6">
           <label for="inputEmail4" className="form-label">
             Email
@@ -73,7 +74,7 @@ const Contacto = () => {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 };
 

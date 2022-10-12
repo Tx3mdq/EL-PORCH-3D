@@ -17,31 +17,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='lead'>
-        <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio consequuntur, ducimus ipsam, 
-    vel aliquid, maiores animi eos voluptatem nulla assumenda repudiandae reprehenderit ad rem. Reiciendis 
-    necessitatibus optio, explicabo nisi vero repellendus similique labore numquam sequi quos molestiae commodi 
-    praesentium consectetur exercitationem id doloremque inventore cupiditate sit magnam perferendis accusantium? 
-    Qui necessitatibus, repellat vero maxime iusto molestias ea voluptatum, fuga non aut ab culpa obcaecati animi
-    praesentium modi vel mollitia atque blanditiis corrupti dolores ut cum, minus nulla? Nulla odio vitae accusamus 
-    totam exercitationem recusandae tempore animi laudantium, facere ipsa sunt velit ducimus, eos aliquam, nam vero! 
-    Alias odio fugiat soluta, consectetur, iste eaque atque qui, quasi quos quo reprehenderit iusto voluptas rerum ad 
-    id provident hic maxime at odit non doloremque ipsum sit minima mollitia! Adipisci sint fugit eos? Facere, velit ipsam. 
-    Facere at accusantium veniam consequatur quaerat temporibus et ullam aperiam obcaecati repellendus, asperiores 
-    magnam iure odit non!</p>
-  </div>
-  <div className='iframe'>
-    <p>Como lo hacemos desde hace 10 años creando Productos personalizados para cumplir todos los requisitos de nuestros
-      clientes.
-    </p>
-  </div>
-  <div className='video'>
-    <iframe width="860" height="515" src="https://www.youtube.com/embed/C4HAJ5HLuB4" title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  
-
       <ItemListContainer/>
     </div>
     

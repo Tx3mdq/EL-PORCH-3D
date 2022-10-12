@@ -1,3 +1,66 @@
+# EL PORCH 3D
+
+<img src="../El-Porch-3D-main/src/Imagenes/logo.png" alt="Foto Portada Readme" width=500px height 200px />
+
+## Bienvenido a mi  Proyecto de React
+<p> React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página. Es mantenido por Facebook y la comunidad de software libre. En el proyecto hay más de mil desarrolladores libres. </p>
+
+## Introduccion
+Proyecto final presentado para el curso de React, para la carrera de full stack web developer,  "Escuela de habilidades digitales", [CoderHouse](http://https://www.coderhouse.com/ "CoderHouse").
+
+### Descripcion del proyecto
+El proyecto se trata sobre un ecommerce, de un emprendimiento de un amigo, dedicado y apasionado por las impresiones 3D.
+
+## Demo
+
+Link de app, en vercel 
+https://el-porch-3d-mq9o13ej5-tx3mdq.vercel.app
+
+### Tecnologias utilizadas
+- HTML5
+- CSS3
+- BOOTSTRAP
+- REDUX
+- JAVASCRIPT
+- SWEET ALERT
+
+### Uso de comandos para github
+Se utilizo git para poder hacer push a github.
+
+git clone https://github.com/Tx3mdq/EL-PORCH-3D.git
+
+### Principales funcionalidades
+
+- Seleccionar de productos.
+
+- Generacion de la orden.
+
+- Formulario + Check out.
+
+### Main libraries used in the project
+
+
+| library                                                          | used                      |
+| ---------------------------------------------------------------- | ------------------------- |
+| [ReactJs](https://es.reactjs.org/)                               | JavaScript framework      |
+| [Create React App](https://github.com/facebook/create-react-app) | Create React Project      |
+| [Material-UI](https://material-ui.com/)                          | UI framework              |
+| [React-Bootstrap](https://react-bootstrap.github.io)             | UI framework              |
+| [Firebase](https://firebase.google.com/?hl=es)                   | Authentication & DataBase |
+| [React Router](https://reactrouter.com/)                         | Router                    |
+
+
+### Acerca de mi
+
+> Mi nombre es Gaston Almeyda, soy estudiante de la carrera  de full stack web developer.
+> Contact: galmeyda@live.com.ar > [linkedin](https://www.linkedin.com/in/gaston-almeyda-20372b125)
+
+### Info
+
+> Comisión: 34745 
+> Profesor: Juan Alberto Mago Sanchez
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

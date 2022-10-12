@@ -1,6 +1,7 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from './paginas/Home';
+import SobreNosotros from './paginas/SobreNosotros';
 import NavBar from './componentes/navegacion/NavBar';
 import ItemDetailContainer from './componentes/Containers/ItemDetailContainer';
 import Contacto from './paginas/Contacto';
@@ -38,7 +39,7 @@ function App() {
       <Routes>   
           <Route path="/" element={<Home /> } />
           <Route path="Product" element={<Product /> } />
-          <Route path="SobreNosotros" element={<div>Sobre Nosotros</div> } />
+          <Route path="SobreNosotros" element={<SobreNosotros /> } />
           <Route path="Contacto" element={<Contacto/>} />     
           <Route path="detail/:id" element={<ItemDetailContainer /> } />
           <Route path='categoryId/:categoryName' element={<Product /> } />

@@ -166,10 +166,13 @@ body{
 }
 .lead p{
     font-size: 25px;
-    margin-top: 200px;
-    margin-bottom: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
     padding: 0px 300px;   
+}
+.lead h2{
+    margin: 75px;
 }
 .iframe p{
     text-align: center;
@@ -177,7 +180,8 @@ body{
     margin-bottom: 100px;
 }
 .video{
-    text-align: center;    
+    text-align: center; 
+    margin-bottom: 300px;   
 }
 .UC{
     margin-top: 250px;
@@ -311,3 +315,43 @@ body{
 .fa-linkedin{
     color: black;
 }  
+.formulario{
+    margin-bottom: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media (max-width: 800px) {
+    .container {
+    flex-direction: column-reverse;
+    }
+.productDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    }
+.item {    
+    padding: 5rem 3rem;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 3rem 0rem;
+    box-sizing: border-box ;   
+    }
+.item3, .productWrapper, .productCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    padding: 5rem 3rem;
+    margin-bottom: 150px;
+    max-width: 100px;
+    }
+    .productName{
+        font-size: 13px;
+        text-align: center;
+    }
+}
