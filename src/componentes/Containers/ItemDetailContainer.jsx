@@ -24,10 +24,6 @@ const ItemDetailContainer = () => {
             setProductDetail({id: res.id, ...res.data()});
         }).catch((err) => console.log(err));
     }
-
-
-
-
 return (
     <>
         <div className="text-center p-4"> 

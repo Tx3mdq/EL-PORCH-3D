@@ -19,8 +19,7 @@ const ItemList = ({product}) => {
           category={item.category} 
           description={item.description} 
           price={item.price}  />
-         </Link>
-         
+        </Link>  
 ))}
   </div>
   </>

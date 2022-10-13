@@ -1,17 +1,27 @@
 import { CartContext } from '../../Context/CartContex';
 import { Link } from 'react-router-dom';
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext} from 'react';
 import { FaEnvelope, FaPhoneAlt, FaUser } from 'react-icons/fa';
 import { Input } from '../Input';
 import { getFirestore, collection, addDoc, doc, updateDoc } from "firebase/firestore";
 import moment from 'moment/moment';
 import { useNavigate } from 'react-router-dom';
-import itemCounts, { ItemCounts } from '../ItemCounts';
+
 
 export const CartView = () => {
-const {cart, removeFromCart, clearAll, sumTotal, cartItems } = useContext(CartContext)
+const {cart, removeFromCart, clearAll, sumTotal  } = useContext(CartContext)
 const navigate = useNavigate();
 const db= getFirestore();
+
+const handleSubmit = (e) => {
+    e.preventDefault()
+    if ([name.trim(), email.trim(), phone.trim()].includes('')) {
+        alert("Por favor completa los campos para finalizar la compra")
+    }
+    else {
+        createOrder()
+    }
+}
 
     const createOrder= () => {
         const order= {
@@ -24,9 +34,6 @@ const db= getFirestore();
     total: sumTotal(cart),
     date:moment().format("DD/MM/YYYY, h:mm:ss a")
 }
-
-//const db = getFirestore();
-//const createOrder = () =>{
     const query = collection(db, 'orders');
     addDoc(query, order)
     .then(({id}) => {
@@ -62,8 +69,6 @@ const updateStockProducts = () => {
 };
 
     const [form, setForm] = useState({ name: '', email: '', phone: '' })
-    //const [order, setOrder] = useState('')
-
     const { name, email, phone } = form
     const formField = [
         {
@@ -114,7 +119,6 @@ const updateStockProducts = () => {
                     <div className="card-body">
                     <p className='lead fw-bold'>{i.title} <span> ({i.cantidad})</span></p>
                     <h5>$ {i.price}</h5>
-                    <ItemCounts />
                 <button className='btn btn-outline-dark m-2' onClick={() => removeFromCart(i.id)}> Eliminar</button>
                     </div>
                 </div>
@@ -135,7 +139,7 @@ const updateStockProducts = () => {
             ))}
             <div className='clear'>
             <button className='btn btn-outline-dark' type="submit"
-                onClick={(createOrder)}>Finalizar Compra
+                onClick={(createOrder, handleSubmit)}>Finalizar Compra
             </button>
             <button className='btn btn-outline-dark' onClick={() => clearAll(cart.length)}>Borrar Todo</button>
             </div>

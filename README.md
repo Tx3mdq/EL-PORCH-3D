@@ -1,6 +1,6 @@
 # EL PORCH 3D
 
-<img src="../El-Porch-3D-main/src/Imagenes/logo.png" alt="Foto Portada Readme" width=500px height 200px />
+![Image text](https://github.com/Tx3mdq/EL-PORCH-3D/blob/main/src/Imagenes/logo.png)
 
 ## Bienvenido a mi  Proyecto de React
 <p> React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página. Es mantenido por Facebook y la comunidad de software libre. En el proyecto hay más de mil desarrolladores libres. </p>
@@ -11,10 +11,12 @@ Proyecto final presentado para el curso de React, para la carrera de full stack 
 ### Descripcion del proyecto
 El proyecto se trata sobre un ecommerce, de un emprendimiento de un amigo, dedicado y apasionado por las impresiones 3D.
 
+![Alt Text](https://media3.giphy.com/media/71iHMenjjgxxwYcSOZ/giphy.gif?cid=790b7611ec1d1a0442a636787a6618858dac1de314b06bde&rid=giphy.gif&ct=g)
+
 ## Demo
 
 Link de app, en vercel 
-https://el-porch-3d-mq9o13ej5-tx3mdq.vercel.app
+https://el-porch-3d-3ot398rqf-tx3mdq.vercel.app
 
 ### Tecnologias utilizadas
 - HTML5

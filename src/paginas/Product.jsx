@@ -15,8 +15,6 @@ const Product = () => {
 
         getProducts();
     },[categoryName])
-
-
         const getProducts = () => {
             const db = getFirestore();
             const querySnapshot = collection(db, "product");
@@ -37,8 +35,7 @@ const Product = () => {
                     })
                     setProductList(data);
                 })
-            }
-            
+            }           
         }
     const [loading, setLoading] = useState(false);
         useEffect (() => {
@@ -66,6 +63,6 @@ return (
     </div>
     )}
     </>
-);
+    );
 };
- export default Product
+export default Product

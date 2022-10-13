@@ -2,12 +2,7 @@ import { useState, createContext } from 'react';
 
 export const CartContext = createContext()
 export const CartProvider = ({ children }) => {
-
-    // const [cantidad, setcantidad] = useState(0)
     const [cart, setCart] = useState([])
-
-    // const isInCart = item => cart.find(product => product.id === item.id)
-
     const addToCart = (item, cantidad) => {
         if (isInCart(item.id)) {
             alert('En Carrito');
@@ -19,25 +14,20 @@ export const CartProvider = ({ children }) => {
         return cart.some((item) => item.id === id);
     };
     
-    
-
     const removeFromCart = (id) => {
         const newCart = cart.filter((itemId) => itemId.id !== id)
         setCart(newCart)
     }
-
     const clearAll = (cart) => {
         cart = []
         setCart(cart)
     }
-
     const sumTotal = (cart) => {
         const totales = cart.reduce((total, product) =>
             total += (product.price * product.cantidad), 0
         ).toFixed(2)
         return totales
     }
-
     return (
         <CartContext.Provider value={{cart, setCart, addToCart,removeFromCart,clearAll,sumTotal}}>
             {children}
