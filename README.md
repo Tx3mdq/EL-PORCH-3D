@@ -16,7 +16,7 @@ El proyecto se trata sobre un ecommerce, de un emprendimiento de un amigo, dedic
 ## Demo
 
 Link de app, en vercel 
-https://el-porch-3d-3ot398rqf-tx3mdq.vercel.app
+https://el-porch-3d-tx3mdq.vercel.app
 
 ### Tecnologias utilizadas
 - HTML5
